@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS1</title>
+</head>
+<body>
+
+
+<script>
+
+    //Homework
+    // Створити змінні. Присвоїти кожному з них значення: 'hello','owu','com', 'ua', 1, 10, -999, 123, 3.14, 2.7, 16, true, false.
+    // Вивести кожну змінну за допомогою: console.log , alert, document.write
+
+    /*
+        let one = 'hello! ';
+        let two = 'owu';
+        let three = 'com.';
+        let four = 'ua';
+        let five = 1;
+        let six = 10;
+        let seven = -999;
+        let eight = 123;
+        let nine = 3.14;
+        let ten = 2.7;
+        let eleven = 16;
+        let twelve = (12 === 12);
+        let thirteen = (13 === 12);
+
+        alert(one);
+
+        document.write(one, two, three, four);
+
+        console.log(seven);
+        console.log(eight);
+        console.log(nine);
+        console.log(eleven);
+        console.log(twelve); // true
+        console.log(thirteen); // false
+
+    */
+    // Переприсвоїти кожній змінній з завдання значення на довільне.
+    // Вивести кожну змінну за допомогою: console.log , alert, document.write
+    /*
+        one = 'hi'; //'hello! ';
+        two =  ' okten'; //'owu';
+        three = 'school';  //'com.';
+        four = "JS";  //'ua';
+        five =  14/7; //1;
+        six =   +5; //10;
+        seven = (8 !== 18); //-999;   //(3+2 == 5)
+        eight = (3 < 5);   //123;
+        nine = (1 + 3);  //3.14;
+        ten =  0.88; //2.7;
+        eleven = 0; //16;
+        twelve = 341;  //(12 === 12);
+        thirteen = 10;  //(13 === 12);
+
+        console.log(five);
+        console.log(nine);
+        alert(four);
+        document.write(two, three, seven, six)
+        console.log(document);
+  */
+    // Створити 3 змінних firstName, middleName, lastName, наповнити їх своїм ПІБ. З'єднати їх в одну змінну person. (Не об'єкт)
+    /*
+    let firstName;
+        firstName = 'Oleg';
+    let middleName
+        middleName = 'Zadorozhniy';
+    let lastName = 'Igorovich';
+
+    //let person = [firstName, middleName, lastName];
+    let person = `${firstName} ${middleName} ${lastName}`;
+    */
+    // За допомогою 3х різних prompt() отримати 3 слова які являються вашими Імям, По-Батькові та роками.
+    // Вивести "Вітаю *Імя* *По батькові*. Тобі *вік* років".
+    /*
+    let p1 = prompt("Name");
+    let p2 = prompt("Last Name");
+    let p3 = prompt("Age");
+
+    console.log("Вітаю" + " " + p1 + " " + p2 + " " + 'тобі' + " " + p3 + " " + 'років');
+
+    */
+    // За допомогою оператора typeof визначити типи наступних змінних та вивести їх в консоль.
+    // let a = 100; let b = '100'; let c = true;
+    /*
+    let a = 100;
+    let b = '100';
+    let c = true;
+
+    console.log(typeof a);
+    console.log(typeof b);
+    console.log(typeof c);
+    */
+    // Визначити відповідний оператор в виразах що б вийшов відповідний результат.
+    // В однакових виразах не використовувати однакові оператори!!!
+    // 5 ? 6 -> true
+    // 5 ? 6 -> false
+    // 5 ? 6 -> false
+    // 5 ? 6 -> false
+    // 10 ? 10 -> true
+    // 10 ? 10 -> true
+    // 10 ? 10 -> false
+    // 10 ? 10 -> false
+    // 10 ? 10 -> false
+    // 123 ? '123' -> false
+    // 123 ? '123' -> true
+    /*
+    console.log(5 < 6);
+    console.log(5 > 6);
+    console.log(5 == 6);
+    console.log(5 >= 6);
+
+    console.log(10 == 10);
+    console.log(10 === 10);
+    console.log(10 > 10);
+    console.log(10 < 10);
+    console.log(10 !== 10);
+
+    console.log(123 === '123');
+    console.log(123 == '123');
+    */
+    // Подумайте Какие значения выведет в окно браузера следующий фрагмент кода?  и почему?
+    /*
+    let str = "20";
+    let a = 5;
+    document.write(str + a + "<br/>"); // 205 // бо 20 і 5 сумуються не як числа, а просто з'єднуються як стрінга;
+    document.write(str - a + "<br/>"); // 15 // працюють як числа
+    document.write(str * "2" + "<br/>"); // 40 // працюють як числа
+    document.write(str / 2 + "<br/>"); // 10 // працюють як числа
+    */
+
+    //Classwork
+    // 1. Створити масив з 10 чисел (можна використовувати Math.random Та Math.floor).
+    // Скласти результат цих чисел в змінній result.
+
+    // let array = [0,1,2,3,4,5,6,7,8,9];
+    //
+    // let result;
+    // result = array[0] + array[1] + array[2] + array[3] + array[4] + array[5] + array[6] + array[7] + array[8] + array[9];
+    //
+    // document.write(result);
+    // 2. Створити об'єкт book з наступними полями  - назва, кількість сторінок, жанр
+
+    // let book1 = {
+    //             name: 'theatre',
+    //             number_of_pages: 90,
+    //             genre: 'comedy'
+    // };
+    // 3. Створити об'єкт book з наступними полями  - назва, кількість сторінок, жанр, автори
+
+    // let book2 = {
+    //     name: 'war',
+    //     number_of_pages: 180,
+    //     genre: 'action',
+    //     authors: {
+    //         author1: 'James',
+    //         author2: 'Frank',
+    //         author3: 'Bob'
+    //     }
+    // };
+
+    // Створити маcив об'єктів book з наступними полями  - назва, кількість сторінок, жанр, автори.
+    // Вивести кожну книгу як окремий об'єкт.
+
+    // let books = [
+    //     book1 = {
+    //         name: 'theatre',
+    //         number_of_pages: 90,
+    //         genre: 'comedy',
+    //         authors: {
+    //             author1: 'George',
+    //             author2: 'Sarah'
+    //         }
+    //     },
+    //     book2 = {
+    //         name: 'war',
+    //         number_of_pages: 180,
+    //         genre: 'action',
+    //         authors: {
+    //             author1: 'James',
+    //             author2: 'Frank',
+    //             author3: 'Bob'
+    //         }
+    //     }
+    // ];
+    //
+    // console.log(books[0], books[1]);
+
+    // // console.log(books[0]['name'], books[1]);
+
+    // 5. Напишіть код, який вираховує площу прямокутника висотою 23см. (змінна height) та шириною 10см (змінна width).
+    // Значення площі зберігати в змінній s.
+
+    // let height = 23;
+    // let width = 10;
+    //
+    // let s = height * width;
+    //
+    // console.log(s);
+
+    // 6. Напиши код, який знаходить об'єм циліндра заввишки 10м (змінна heightC) та діаметром основи 4м (dC),
+    // результат помістіть у змінну v.
+
+    // let heightC = 10;
+    // let dC = 4;
+    //
+    // let v = 3.14 * (dC/2)**2 * heightC;
+    //
+    // console.log(v)
+
+    // 7. У прямокутного трикутника дві сторони n (зі значенням 3) та m (зі значенням 4).
+    // Знайдіть гіпотенузу k за теоремою Піфагора (потрібно використовувати функцію Math.pow (число, ступінь)
+    // або оператор зведення в ступінь **).
+
+    // let n = 3;
+    // let m = 4;
+    //
+    // let k = (Math.pow(n,2) + Math.pow(m,2))**0.5;
+    //
+    // console.log(k);
+
+</script>
+</body>
+</html>

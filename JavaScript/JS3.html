@@ -1,0 +1,759 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS3</title>
+</head>
+<body>
+<script>
+    // Homework
+
+    // 1.створити масив з:
+    // - з 5 числових значень
+    // - з 5 стічкових значень
+    // - з 5 значень стрічкового, числового та булевого типу
+    // - та вивести його в консоль
+
+    // let a1 = true;
+    // let a2 = 5 > 3;
+    // let a3 = false;
+    // let a4 = 'boolean';
+    // let a5 = 0;
+    //
+    // let arr1 = [0,1,2,3,4];
+    // let arr2 = ['яблуко',"груша","абрикос","вишня","слива"];
+    // let arr3 = [0,1,2,3,4,'яблуко',"груша","абрикос","вишня","слива",a1,a2,a3,a4,a5];
+
+    // Виводимо в документ:
+    // document.write(arr3);
+
+    // Можна вивести і по-іншому:
+    // document.write(`${arr2[0]}, ${arr2[1]}, ${arr2[2]}, ${arr2[3]}, ${arr2[4]}`);
+
+    // 2. Створити пустий масив. Наповнити його будь-якими значеннями звертаючись до конкретного індексу.
+    // Вивести в консоль.
+
+    // let arr4 = [];
+    //
+    // arr4[0] = 100;
+    // arr4[1] = 120;
+    // arr4[2] = 140;
+    // arr4[3] = 160;
+    // arr4[4] = 180;
+    // arr4[5] = 200;
+    //
+    // console.log(arr4);
+
+    // 3.
+    // - За допомогою циклу for і document.write() вивести 10 блоків div c довільним текстом всередині
+    // - За допомогою циклу for і document.write() вивести 10 блоків div c довільним текстом і індексом всередині
+    // - За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом всередині.
+    // - За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом і індексом всередині.
+
+    // for (let i = 0; i <10 ; i++) {
+    //     document.write(`<div>some text</div>`);
+    // }
+
+    // for (let i = 0; i <10 ; i++) {
+    //     document.write(`<div>text ${i}</div>`);
+    // }
+
+    // let i = 0;
+    // while (i <20) {
+    //     document.write(`<h1>text</h1>`);
+    //     i++;
+    // }
+
+    // let i = 0;
+    // while (i <20) {
+    //     document.write(`<h1>text ${i}</h1>`);
+    //     i++;
+    // }
+
+    // 4.
+    // - Створити масив з 10 числових елементів. Вивести в консоль всі його елементи в циклі.
+    // - Створити масив з 10 строкових елементів. Вивести в консоль всі його елементи в циклі.
+    // - Створити масив з 10 елементів будь-якого типу. Вивести в консоль всі його елементи в циклі.
+    // - Створити масив з 10 елементів числового, стірчкового і булевого типу. За допомогою if та typeof вивести
+    //      тільки булеві елементи.
+    // - Створити масив з 10 елементів числового, стірчкового і булевого типу. За допомогою if та typeof вивести
+    //      тільки числові елементи.
+    // - Створити масив з 10 елементів числового, стрічкового і булевого типу. За допомогою if та typeof вивести
+    //      тільки рядкові елементи.
+
+
+    // let arr5 = [0,1,2,3,4,5,6,7,8,9];
+    //
+    // for (const arr of arr5) {
+    //     console.log(arr);
+    // }
+
+    // let arr6 = ['text 0','text 1','text 2','text 3','text 4','text 5','text 6','text 7','text 8','text 9'];
+    //
+    // for (const arr of arr6) {
+    //     console.log(arr);
+    // }
+
+    // let arr7 = ['text 0',1,'text 2',3,'text 4',5,'text 6',7,'text 8',9];
+    //
+    // for (const arr of arr7) {
+    //     console.log(arr);
+    // }
+
+    // let bool1 = 24 > 18;
+    // let bool2 = 6 === 6;
+    // let bool3 = 9 !== 8;
+
+    // let arr8 = [1,bool1,'pineapple',2,bool2,'grape',3,bool3,'peach',4];
+
+    // for (const arr of arr8) {
+    //     if (typeof arr === 'boolean') {
+    //         console.log(arr)
+    //     }
+    // }
+
+    // for (const arr of arr8) {
+    //     if (typeof arr === 'number') {
+    //         console.log(arr)
+    //     }
+    // }
+
+    // for (const arr of arr8) {
+    //     if (typeof arr === 'string') {
+    //         console.log(arr)
+    //     }
+    // }
+
+    // 5.
+    // - Створити порожній масив. Наповнити його 10 елементами (різними за типами) через звернення до конкретних індексів.
+    //      Вивести в консоль всі його елементи в циклі.
+    // - Створити цикл for на 10  ітерацій з кроком 1. Вивести поточний номер кроку через console.log та document.write
+    // - Створити цикл for на 100 ітерацій з кроком 1. Вивести поточний номер кроку через console.log та document.write
+    // - Створити цикл for на 100 ітерацій з кроком 2. Вивести поточний номер кроку через console.log та document.write
+    // - Створити цикл for на 100 ітерацій. Вивести тільки парні кроки. через console.log + document.write
+    // - Створити цикл for на 100 ітерацій. Вивести тільки непарні кроки. через console.log + document.write
+
+    // let b1 = 4!==5;
+    // let b2 = 4 < 3;
+    // let b3 = 3 >= 3;
+    // let b4 = 12 === 11;
+    //
+    // let arr9 = [];
+    //     arr9[0] = b2;
+    //     arr9[1] = 110;
+    //     arr9[2] = 'strawberry';
+    //     arr9[3] = b1;
+    //     arr9[4] = 'cherry';
+    //     arr9[5] = 'melon';
+    //     arr9[6] = b3;
+    //     arr9[7] = 0;
+    //     arr9[8] = b4;
+    //     arr9[9] = -146;
+    //
+    //     //console.log(arr9);
+    //
+    // for (let i = 0; i < arr9.length; i++) {
+    //     let arr = arr9[i];
+    //     console.log(arr);
+    // }
+
+    ///////////////////////////////
+
+    // for (let i = 0; i < 10; i++) {
+    //     console.log(i);
+    //     document.write(i);
+    // }
+
+    ///////////////////////////////
+
+    // for (let i = 0; i < 100; i++) {
+    //     console.log(i);
+    //     document.write(i);
+    // }
+
+    ///////////////////////////////
+
+    // // тут і нижче по 200, бо 100 ітерацій
+    // for (let i = 0; i < 200; i += 2) {
+    //     console.log(i);
+    //     document.write(i);
+    // }
+
+    ///////////////////////////////
+
+    // for (let i = 0; i < 200; i++) {
+    //     if (i % 2 === 0) {
+    //     console.log(i);
+    //     document.write(i);
+    //     }
+    // }
+
+    ///////////////////////////////
+
+    // for (let i = 0; i < 200; i++) {
+    //     if (i % 2 !== 0) {
+    //     console.log(i);
+    //     document.write(i);
+    //     }
+    // }
+
+    ///////////////////////////////
+
+    // Classwork
+
+    // Зробити масив з 10 чисел [2,17,13,6,22,31,45,66,100,-18], та:
+    // 1. перебрати його циклом while
+    // 2. перебрати його циклом for
+    // 3. перебрати циклом while та вивести числа тільки з непарним індексом
+    // 4. перебрати циклом for та вивести числа тільки з непарним індексом
+    // 5. перебрати циклом while та вивести числа тільки парні значення
+    // 6. перебрати циклом for та вивести числа тільки парні значення
+    // 7. замінити кожне число кратне 3 на слово "okten"
+    // 8. вивести масив в зворотньому порядку.
+    // 9. всі попередні завдання (окрім 8), але в зворотньому циклі (с заду на перед)
+
+    //let array = [2,17,13,6,22,31,45,66,100,-18];
+
+    // 1
+    // let i = 0;
+    // while (i < array.length) {
+    //     console.log(array[i]);
+    //     i++;
+    // }
+
+    // 2
+    // for (let arr of array) {
+    //     console.log(arr);
+    // }
+
+    //3 // з непарним індексом
+    // let i = 0;
+    // while (i < array.length) {
+    //     if (i % 2 === 0) {
+    //     console.log(array[i]);
+    //     }
+    //     i++;
+    // }
+
+    //4 // з непарним індексом
+    // for (let i = 0; i < array.length; i++) {
+    //     if (i % 2 === 0) {
+    //         console.log(array[i]);
+    //     }
+    // }
+
+    //5 // парні значення
+    // let i = 0;
+    // while (i < array.length) {
+    //     if (array[i] % 2 === 0) {
+    //     console.log(array[i]);
+    //     }
+    //     i++;
+    // }
+
+    //6 // парні значення
+    //  for (let arr of array) {
+    //     if (arr % 2 === 0) {
+    //     console.log(arr);
+    //     }
+    //  }
+
+    //7 //замінити кожне число кратне 3 на слово "okten"
+    // let i = 0;
+    // while (i < array.length) {
+    //     if (array[i] % 3 === 0) {
+    //     console.log('okten');
+    //     //document.write('okten');
+    //     }
+    //     i++;
+    // }
+
+    //8 //вивести масив в зворотньому порядку.
+    // for (let i = 9; i >= 0; i--) {
+    //         console.log(array[i]);
+    // }
+
+    //9 //всі попередні завдання (окрім 8), але в зворотньому циклі (ззаду на перед)
+
+    //9.1
+    // let i = 9;
+    // while (i >= 0) {
+    //     console.log(array[i]);
+    //     i--;
+    // }
+
+    //9.2
+    // for (let arr of array.reverse()) {
+    //     console.log(arr);
+    // }
+
+    //9.3
+    // let i = 9;
+    // while (i >= 0) {
+    //     if (i % 2 === 0) {
+    //     console.log(array[i]);
+    //     }
+    //     i--;
+    // }
+
+    //9.4
+    // for (let i = 9; i >= 0; i--) {
+    //     if (i % 2 === 0) {
+    //         console.log(array[i]);
+    //     }
+    // }
+
+    //9.5
+    // let i = 9;
+    // while (i >= 0) {
+    //     if (array[i] % 2 === 0) {
+    //     console.log(array[i]);
+    //     }
+    //     i--;
+    // }
+
+    //9.6
+    //  for (let arr of array.reverse()) {
+    //     if (arr % 2 === 0) {
+    //     console.log(arr);
+    //     }
+    //  }
+
+    //9.7 //тут без різниці в якій послідовності виводити
+    // let i = 9;
+    // while (i >= 0) {
+    //     if (array[i] % 3 === 0) {
+    //     console.log('okten');
+    //     }
+    //     i--;
+    // }
+
+    //Templates
+
+    // 1.Використовуючи данні з масиву, за допомоги document.write та циклу
+    // побудувати структуру по шаблону template1.1
+    //<!--        template 1.1-->
+    //<ul>
+    //    <li>ITEM OF ARRAY</li>
+    //    <!--
+    //    інші об'єкти масиву
+    //  ...
+    //  ...
+    //  ...
+    //    -->
+    //</ul>
+    //<!---------------------------------------------->
+    //let listOfItems = ['html', 'css', 'javascript', 'mysql', 'mongodb', 'react', 'angular', 'node.js'];
+
+    // let listOfItems = ['html', 'css', 'javascript', 'mysql', 'mongodb', 'react', 'angular', 'node.js'];
+    //
+    // document.write(`<ul>`)
+    // for (const listOfItem of listOfItems) {
+    //     document.write(`<li>${listOfItem}</li>`)
+    // }
+    //     document.write(`</ul>`)
+
+    // 2. Використовуючи данні з масиву, за допомоги document.write та циклу
+    // побудувати структуру по шаблону template2.1 & template2.2. Зробити адекватну стилізацію.
+    // Великими літерами прописанні властивості об'єкту які потрібно впровадити в шаблон.
+    // Шаблон застосувати до кожного об'єкта в масиві
+    //<!--template 2.1-->
+    // <div>
+    //     NAME- SURNAME- AGE- INFO- <img src="PHOTO" alt="">
+    // </div>
+    //
+    // <!--template 2.2-->
+    // <div>
+    //     <h2>NAME SURNAME. age is - AGE</h2>
+    //     <p>INFO</p>
+    //     <img src="PHOTO" alt="">
+    // </div>
+    // <!--
+    // інші об'єкти з масиву
+    // ...
+    // ...
+    // ...
+    // -->
+    //<!---------------------------------------------->
+
+    // let simpsons = [
+    //     {
+    //         name: 'Bart',
+    //         surname: 'Simpson',
+    //         age: 10,
+    //         info: 'Бартолом\'ю ДжоДжо «Барт» Сімпсон (англ. Bartholomew JoJo «Bart» Simpson) — один із головних героїв мультиплікаційного серіалу Сімпсони. Барт — найстарша дитина Гомера і Мардж Сімпсон. У нього також є дві молодші сестри — Ліса і Меґґі. Барт є втіленням образу бешкетника та посереднього учня у школі. Разом зі своїм батьком Барт є одним із найвідоміших персонажів у цьому серіалі.',
+    //         photo: 'https://upload.wikimedia.org/wikipedia/uk/a/aa/Bart_simpson.png'
+    //     },
+    //     {
+    //         name: 'Homer',
+    //         surname: 'Simpson',
+    //         age: 40,
+    //         info: 'Гомер Джей Сімпсон (англ. Homer Jay Simpson) — один із головних героїв мультсеріалу «Сімпсони». Гомер — грубий і неввічливий батько родини, він має очевидні вади: товстий, лисий і не дуже розумний. Нерідко він поводиться як блазень, абсурдно, егоїстично і нетактовно, але все ж лишається симпатичним.',
+    //         photo: 'http://upload.wikimedia.org/wikipedia/en/0/02/Homer_Simpson_2006.png'
+    //     },
+    //     {
+    //         name: 'Marge',
+    //         surname: 'Simpson',
+    //         age: 38,
+    //         info: 'Ма́рджори Жакли́н «Мардж» Си́мпсон (в девичестве Бувье́) (англ. Marjorie Jacqueline «Marge» Simpson) — постоянный персонаж мультипликационного сериала «Симпсоны», её озвучивает Джулия Кавнер. Обычно носит зелёное платье, красные балетки, на шее — ожерелье из искусственного жемчуга и ездит на оранжевом универсале. У неё шикарные синие волосы, которые она обычно собирает в очень высокую причёску. Глаза цвета ореха (19s6e). Основное занятие — домохозяйка, большую часть времени проводит в заботе о доме, детях и Гомере. Образ Мардж копирует стереотип провинциальной американской домохозяйки 50-х годов. Мардж — единственный член семьи, посещающий церковь добровольно. Старается поддерживать нравственность не только своей семьи, но и всего города. Отлично готовит, особенно славятся её свиные отбивные и зефир. Любимое блюдо — лапша с маслом.',
+    //         photo: 'https://upload.wikimedia.org/wikipedia/ru/0/0b/Marge_Simpson.png'
+    //     },
+    //     {
+    //         name: 'Lisa',
+    //         surname: 'Simpson',
+    //         age: 9,
+    //         info: 'Ли́за Мари́ Си́мпсон (англ. Lisa Marie Simpson) — героиня мультипликационного сериала «Симпсоны». Средний ребёнок в семье, восьмилетняя девочка, выделяющаяся среди остальных Симпсонов прежде всего своим умом и рассудительностью.',
+    //         photo: 'https://upload.wikimedia.org/wikipedia/ru/e/ec/Lisa_Simpson.png'
+    //     },
+    //     {
+    //         name: 'Maggie',
+    //         surname: 'Simpson',
+    //         age: 1,
+    //         info: 'Ма́ргарет Эвелин «Мэ́гги» Си́мпсон (англ. Margaret Evelyn “Maggie” Simpson) — персонаж мультсериала «Симпсоны». Впервые появилась на телевидении в шоу Трейси Ульман, в короткометражке Good Night (англ.)русск. 19 апреля 1987 года. Мэгги была придумана и разработана карикатуристом Мэттом Грейнингом, пока он ждал встречи с Джеймсом Л. Бруксом. Названа в честь младшей сестры Грейнинга. После появления в шоу Трейси Ульман, через три года семья Симпсонов получила собственный сериал на телеканале Fox, дебют произошёл 17 декабря 1989 года.',
+    //         photo: 'https://upload.wikimedia.org/wikipedia/ru/9/9d/Maggie_Simpson.png'
+    //     },
+    // ];
+
+    // for (const simpson of simpsons) {
+    //     document.write(`<div>${simpson.name} - ${simpson.surname} - ${simpson.age} - ${simpson.info} - <img src="${simpson.photo}"></div>`);
+    // }
+
+    // for (const simpson of simpsons) {
+    //     document.write(`<h2>${simpson.name}</h2>`);
+    //     document.write(`<h2>${simpson.surname}</h2>`);
+    //     document.write(`age is - <b>${simpson.age}</b>`);
+    //     document.write(`<p>${simpson.info}</p>`);
+    //     document.write(`<img src="${simpson.photo}">`);
+    // }
+
+    // 3. Використовуючи данні з масиву, за допомоги document.write та циклу
+    // побудувати структуру по шаблону template3.1 Зробити адекватну стилізацію
+    // Великими літерами прописанні властивості об'єкту які потрібно впровадити в шаблон
+    // <!--        template 3.1-->
+    // <div>
+    //     <div class="product-card">
+    //         <h3 class="product-title">TITLE. Price - PRICE</h3>
+    //         <img src="" alt="" class="product-image">
+    //     </div>
+    //     <!--
+    //                 інші об'єкти з масиву
+    //                 ...
+    //                 ...
+    //                 ...
+    //     -->
+    // </div>
+    
+    // let products = [{
+    //         title: 'milk',
+    //         price: 22,
+    //         image: 'https://www.mcqueensdairies.co.uk/wp-content/uploads/2019/02/Mcqueens_1litre_whole_organic-300x300-3.jpg'
+    //     }, {
+    //         title: 'juice',
+    //         price: 27,
+    //         image: 'https://images-na.ssl-images-amazon.com/images/I/61jL2GCuKLL._SX679_PIbundle-24,TopRight,0,0_AA679SH20_.jpg'
+    //     }, {
+    //         title: 'tomato',
+    //         price: 47,
+    //         image: 'https://dictionary.cambridge.org/ru/images/thumb/tomato_noun_001_17860.jpg?version=5.0.74'
+    //     }, {
+    //         title: 'tea',
+    //         price: 15,
+    //         image: 'https://yogiproducts.com/wp-content/uploads/2009/03/YT-US-CAR-RelaxedMind-C23-202201-V2-3DFront_withGlow-300DPI-1.png'
+    //     },];
+
+    // for (const product of products) {
+    //     document.write(`<div style="display: flex; flex-direction: column; align-content: center; justify-content: center; width: 350px; height: 450px; margin: 20px; border: black 5px solid ">
+    //                     <h3 style="display: flex; align-content: center; justify-content: center">${product.title}</h3>
+    //                     <h3 style="display: flex; align-content: center; justify-content: center">Price - ${product.price}</h3>
+    //                     <div style="display: flex; align-content: center; justify-content: center"> <img style="height: 300px; width: 300px" src="${product.image}" alt='${product.title}'> </div>
+    //                     </div>`);
+    //                                 }
+
+    //Additional
+
+    // 1
+    // 1.1. Створити пустий масив та :
+    //      a. заповнити його 50 парними числами за допомоги циклу.
+    //      b. заповнити його 50 непарними числами за допомоги циклу.
+    //      c. Заповнити масив 20ма рандомними числами. (Google: Generate random number JS)
+    //      d. Заповнити масив 20ма рандомними чисалами в діапазоні від 8 до 732 (Google: Generate random number JS)
+    // 1.2. Вивести за допомогою console.log кожен третій елемент
+    // 1.3. Вивести за допомогою console.log кожен третій елемент тільки якщо цей елемент є парним.
+    // 1.4. Вивести за допомогою console.log кожен третій елемент тільки якщо цей елемент є парним та записати їх в новий масив
+    // 1.5. Вивести кожен елемент масиву, сусід справа якого є парним
+    //      EXAMPLE: [ 1, 2, 3, 5, 7, 9, 56, 8, 67 ] -> Має бути виведено 1, 9, 56
+    // 1.6. Є масив з числами [100,250,50,168,120,345,188], Які характеризують вартість окремої покупки. Обрахувати середній чек.
+    // 1.7. Створити масив з рандомними значеннями, помножити всі його елементи на 5 та перемістити їх в інший масив.
+    // 1.8. Створити масив з будь якими значеннями (стрінги, числа, і тд...). пройтись по ньому, і якщо елемент є числом - додати його в інший масив.
+
+    // Створити пустий масив та :
+
+    //let array = [];
+
+    // заповнити його 50 парними числами за допомоги циклу.
+    // for (let i = 0; i < 100; i++) {
+    //     array[i] = i;
+    //     if (i%2 === 0)
+    //     console.log(array[i]);
+    // }
+    //     // console.log(array);
+
+    // заповнити його 50 непарними числами за допомоги циклу.
+    // for (let i = 0; i < 100; i++) {
+    //     array[i] = i;
+    //     if (i%2 !== 0)
+    //         console.log(array[i]);
+    // }
+    //     // console.log(array);
+
+    // Заповнити масив 20ма рандомними числами. (Google: Generate random number JS)
+    // for (let i = 0; i < 20; i++) {
+    //     array[i] = Math.floor(Math.random() * 100);
+    //         console.log(array[i]);
+    // }
+    //     // console.log(array);
+
+    // Заповнити масив 20ма рандомними чисалами в діапазоні від 8 до 732 (Google: Generate random number JS)
+    // for (let i = 0; i < 20; i++) {
+    //     array[i] = Math.floor(Math.random() * (732 - 8) + 8);
+    //     console.log(array[i]);
+    // }
+    // console.log(array);
+
+    // 1.2. Вивести за допомогою console.log кожен третій елемент
+
+    //Візьмемо перший варіант заповнення масиву і виведемо кожен 3-й елемент
+    // for (let i = 0; i < 100; i++) {
+    //     array[i] = i;
+    //     if (i%3 === 0) {
+    //     console.log(array[i]);
+    //      }
+    // }
+
+    //1.3. Вивести за допомогою console.log кожен третій елемент тільки якщо цей елемент є парним.
+    // for (let i = 0; i < 100; i++) {
+    //     array[i] = i;
+    //     if (i%3 === 0 && i%2 === 0) {
+    //         console.log(array[i]);
+    //      }
+    // }
+
+    // 1.4. Вивести за допомогою console.log кожен третій елемент тільки якщо цей елемент є парним та записати їх в новий масив
+
+    // for (let i = 0; i < 100; i++) {
+    //     array[i] = i;
+    //     if (i%3 === 0 && i%2 === 0) {
+    //         //console.log(array[i]);
+    //         let area = [];
+    //         area = array[i];
+    //         console.log(area);
+    //     }
+    // }
+
+    // 1.5. Вивести кожен елемент масиву, сусід справа якого є парним
+    //      EXAMPLE: [ 1, 2, 3, 5, 7, 9, 56, 8, 67 ] -> Має бути виведено 1, 9, 56
+
+    // let example = [1,2,3,5,7,9,56,8,67];
+    //
+    // for (let i = 0; i < 9; i++) {
+    //     if (example[i+1]%2 ===0) {
+    //         console.log(example[i]);
+    //     }
+    // }
+
+    // 1.6. Є масив з числами [100,250,50,168,120,345,188], які характеризують вартість окремої покупки. Обрахувати середній чек.
+
+    // let price = [100,250,50,168,120,345,188];
+    //
+    // let summa = 0;
+    //
+    // for (const priceKey of price) {
+    //     summa += priceKey;
+    //     console.log(summa)
+    // }
+    // console.log(summa/price.length);
+
+    /////old///let sum = (price[0] + price[1] + price[2] + price[3] + price[4] + price[5] + price[6]) / price.length
+    /////old///console.log(sum)
+
+    //1.7. Створити масив з рандомними значеннями, помножити всі його елементи на 5 та перемістити їх в інший масив.
+
+    // let arr = [];
+    // let arr2 = [5,5,5,5,5,5,5,5,5,5];
+    //
+    // for (let i = 0; i < 10; i++) {
+    //     arr[i] = Math.floor(Math.random() * 10);
+    //     arr2[i] *= arr[i];
+    // }
+    //
+    // console.log(arr);
+    // console.log(arr2);
+
+    // 1.8. Створити масив з будь якими значеннями (стрінги, числа, і тд...).
+    // Пройтись по ньому, і якщо елемент є числом - додати його в інший масив.
+
+    // let arr = [2, 'string1', 3, 'string2', 45, 'string3', 0, -96];
+    // let arr2 = [];
+    //
+    // for (const arrKey of arr) {
+    //     //console.log(arrKey)
+    //     if (typeof arrKey !== 'string') {
+    //         //console.log(arrKey)
+    //         arr2 = arr2.concat(arrKey);
+    //         //console.log(arr2)
+    //     }
+    // }
+    //
+    // console.log(arr2)
+
+    // 2.
+    // - Дано 2 масиви з рівною кількістю об'єктів.
+    // Масиви:
+    //     let usersWithId = [
+    //         {id: 1, name: 'vasya', age: 31, status: false},
+    //         {id: 2, name: 'petya', age: 30, status: true},
+    //         {id: 3, name: 'kolya', age: 29, status: true},
+    //         {id: 4, name: 'olya', age: 28, status: false}
+    //     ];
+    //
+    // let citiesWithId = [
+    //     {user_id: 3, country: 'USA', city: 'Portland'},
+    //     {user_id: 1, country: 'Ukraine', city: 'Ternopil'},
+    //     {user_id: 2, country: 'Poland', city: 'Krakow'},
+    //     {user_id: 4, country: 'USA', city: 'Miami'}
+    // ];
+    //
+    // З'єднати в один об'єкт користувача та місто з відповідними "id" та "user_id" .
+    //     Записати цей об'єкт в новий масив
+    // Example:
+    //     let usersWithCities = [
+    //         {
+    //             id: 1, // <===
+    //             name: 'vasya',
+    //             age: 31,
+    //             status: false,
+    //             address: {
+    //                 user_id: 1, // <===
+    //                 country: 'Ukraine',
+    //                 city: 'Ternopil'
+    //             }
+    //         },
+    //         // TO BE CONTINUED .....
+    //     ]
+
+        // НЕ ПОВНІСТЮ
+    //     let usersWithId = [
+    //         {id: 1, name: 'vasya', age: 31, status: false},
+    //         {id: 2, name: 'petya', age: 30, status: true},
+    //         {id: 3, name: 'kolya', age: 29, status: true},
+    //         {id: 4, name: 'olya', age: 28, status: false}
+    //     ];
+    //
+    // let citiesWithId = [
+    //     {user_id: 3, country: 'USA', city: 'Portland'},
+    //     {user_id: 1, country: 'Ukraine', city: 'Ternopil'},
+    //     {user_id: 2, country: 'Poland', city: 'Krakow'},
+    //     {user_id: 4, country: 'USA', city: 'Miami'}
+    // ];
+    //
+    // let usersWithCities = [];
+    //
+    // let one = [];
+    // let two = [];
+    // let three = [];
+    // let four = [];
+    //
+    // for (const usersWithIdElement of usersWithId) {
+    //     if (usersWithIdElement.id === 1) {
+    //         one = one.concat(usersWithIdElement);
+    //     }
+    //     else if (usersWithIdElement.id === 2) {
+    //         two = two.concat(usersWithIdElement);
+    //     }
+    //     else if (usersWithIdElement.id === 3) {
+    //         three = three.concat(usersWithIdElement);
+    //     } else
+    //         four = four.concat(usersWithIdElement);
+    // }
+    //
+    // for (const citiesWithIdElement of citiesWithId) {
+    //     if (citiesWithIdElement.user_id === 1) {
+    //         one = one.concat(citiesWithIdElement);
+    //     }
+    //     else if (citiesWithIdElement.user_id === 2) {
+    //         two = two.concat(citiesWithIdElement);
+    //     }
+    //     else if (citiesWithIdElement.user_id === 3) {
+    //         three = three.concat(citiesWithIdElement);
+    //     } else
+    //         four = four.concat(citiesWithIdElement);
+    // }
+    //
+    // console.log(one);
+    // console.log(two);
+    // console.log(three);
+    // console.log(four);
+    //
+    // usersWithCities = [one, two, three, four];
+    // console.log(usersWithCities);
+
+    // Взяти масив з 10 чисел або створити його. Вивести в консоль тільки ті елементи, значення яких є парними.
+
+    //let area = [3,4,5,9,2,1,8,5,2,6];
+
+    // for (let i = 0; i < 10; i++) {
+    //     if (area[i]%2 === 0) {
+    //         console.log(area[i]);
+    //      }
+    // }
+
+    // Взяти масив з 10 чисел або створити його. Створити 2й порожній масив.
+    // За допомогою будь-якого циклу скопіювати значення одного масиву в інший.
+
+    // let area = [3,4,5,9,2,1,8,5,2,6];
+    // let area2 = [];
+    //
+    // for (let i = 0; i < 10 ; i++) {
+    //     area2.length = area.length
+    //     area2[i] = area[i];
+    //     //console.log(area);
+    //     //console.log(area2);
+    // }
+    //
+    // console.log(area2);
+
+    // - Дано масив: [ 'a', 'b', 'c']. За допомогою циклу for зібрати всі букви в слово.
+    // - Дано масив: [ 'a', 'b', 'c']. За допомогою циклу while зібрати всі букви в слово.
+    // - Дано масив: [ 'a', 'b', 'c']. За допомогою циклу for of зібрати всі букви в слово.
+
+    // let ar = [ 'a', 'b', 'c'];
+    // let b = [];
+
+    // for (let i = 0; i < 3; i++) {
+    //     if (typeof ar[i] === 'string') {
+    //         b += ar[i];
+    //     }
+    // }
+    // console.log(b)
+
+    // let i = 0;
+    // while ( i < ar.length) {
+    //     b += ar[i];
+    //     i++;
+    // }
+    // console.log(b)
+
+    // for (const a of ar) {
+    //     if (typeof a === 'string') {
+    //        b += a;
+    //     }
+    // }
+    // console.log(b)
+
+
+</script>
+</body>
+</html>
